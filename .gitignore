@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# TFLite Micro build artifacts
+tflite-micro-demo/gen/
+tflite-micro-demo/user_build/
+
+# OS / IDE
+.DS_Store
+.vscode/
