@@ -61,13 +61,19 @@ pip3 install -r requirements.txt
 
 ```
 handtracking-pi-tflite/
-├── python-demo/           # TFLite Python scripts & models
-├── sample_images/         # Test images (JPEG, PPM)
-├── scripts/               # Utility scripts (e.g., make_ppm.sh)
-├── tflite-micro-demo/     # C++ demo for TFLite Micro
-│   ├── Makefile           # Incremental build
-│   ├── build_pi.sh        # Full build script
-│   └── src/               # Source & model data
+├── python-demo/
+│   ├── models/  # model assets
+│   └── …        # scripts
+├── tflite-micro-demo/
+│   ├── Makefile
+│   ├── build_pi.sh
+│   └── src/     # sources & model data
+├── sample_images/
+├── scripts/
+│   └── make_ppm.sh
+├── LICENSE
+├── THIRD_PARTY_NOTICES.md
+├── README.md
 └── .gitignore
 ```
 
