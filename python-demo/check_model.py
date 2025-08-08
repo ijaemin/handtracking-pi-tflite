@@ -10,8 +10,8 @@ except ImportError:
 
 # Locate model and anchor files relative to this script's directory
 SCRIPT_DIR = Path(__file__).resolve().parent
-MODEL_PATH = SCRIPT_DIR / "hand_int8_io_noanchors.tflite"
-ANCH_PATH  = SCRIPT_DIR / "anchors_ssd300.npy"
+MODEL_PATH = SCRIPT_DIR / "models" / "hand_int8_io_noanchors.tflite"
+ANCH_PATH  = SCRIPT_DIR / "models" / "anchors_ssd300.npy"
 
 print(f"Loading model: {MODEL_PATH}")
 interp = Interpreter(model_path=str(MODEL_PATH))

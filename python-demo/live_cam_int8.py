@@ -19,8 +19,8 @@ except Exception:
 
 # Determine paths relative to this script
 SCRIPT_DIR = Path(__file__).resolve().parent
-MODEL_PATH = SCRIPT_DIR / "hand_int8_io_noanchors.tflite"
-ANCH_PATH  = SCRIPT_DIR / "anchors_ssd300.npy"
+MODEL_PATH = SCRIPT_DIR / "models" / "hand_int8_io_noanchors.tflite"
+ANCH_PATH  = SCRIPT_DIR / "models" / "anchors_ssd300.npy"
 
 IN_W = IN_H = 300
 Y_SCALE, X_SCALE, H_SCALE, W_SCALE = 10.0, 10.0, 5.0, 5.0

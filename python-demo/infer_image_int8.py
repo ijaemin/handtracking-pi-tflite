@@ -11,8 +11,8 @@ except ImportError:
 
 # Define paths relative to this script
 SCRIPT_DIR = Path(__file__).resolve().parent
-MODEL_PATH = SCRIPT_DIR / "hand_int8_io_noanchors.tflite"
-ANCH_PATH  = SCRIPT_DIR / "anchors_ssd300.npy"
+MODEL_PATH = SCRIPT_DIR / "models" / "hand_int8_io_noanchors.tflite"
+ANCH_PATH  = SCRIPT_DIR / "models" / "anchors_ssd300.npy"
 # Default to sample_images/sample.jpg in the project root
 DEFAULT_IMG = SCRIPT_DIR.parent / "sample_images" / "sample.jpg"
 IMG_PATH = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_IMG
